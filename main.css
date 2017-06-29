@@ -45,7 +45,8 @@ img{
     */
 }
 #site-header{
-   background-color: #262425;
+
+display: inline;
 
 
 
@@ -79,6 +80,7 @@ img{
     top: 20px;
 }
 #site-header div h3{
+  font-family: 'Dancing Script';
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
@@ -90,11 +92,8 @@ img{
 #main-navigation{
     background: #444;
  width: 1000px;
-  margin: 0 auto;
-  border: 10px;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+ display: flex;
+
 
     /*
         TODO:
@@ -128,10 +127,9 @@ main{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     flex-direction: column;
     display: flex;
-    flex-basis: 500px;
-    margin-top: -80px;
-    margin-bottom: 12px;
-    margin-left: -180px;
+    flex-basis: 60%;
+    top: -30px;
+position: relative;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -142,8 +140,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    inline-size: 200px;
-    margin-top: -80px;
+    position: relative;
+    top: -30px;
+    flex-basis: 20%;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -167,6 +166,7 @@ article{
     padding: 20px;
     margin-bottom: 20px;
     overflow: auto
+
 }
 article h2{
     line-height: 1em;
@@ -186,7 +186,7 @@ article time{
 }
 article img{
   float: right;
-  width: 250px;
+  width: 35%;
     /*
         TODO:
         - Float article images to the right
@@ -194,6 +194,11 @@ article img{
     */
 }
 article footer p{
+  display: flex;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: lightgrey;
     /*
         TODO:
         - Style the article footer
@@ -203,6 +208,9 @@ article footer p{
 #site-footer{
 
     background: #333;
+    display: flex;
+    justify-content: center;
+    color: white;
     /*
         TODO:
         - Style the site footer
